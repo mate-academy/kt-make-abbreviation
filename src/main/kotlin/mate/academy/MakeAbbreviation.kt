@@ -6,7 +6,7 @@ fun makeAbbr(source: String) : String {
     val strings = source.uppercase().split(" ")
     var result: String = ""
     for (element in strings) {
-        result += element.toCharArray()[FIRST_CHAR_INDEX]
+        result += element[FIRST_CHAR_INDEX]
     }
     return result
 }
