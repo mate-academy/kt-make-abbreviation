@@ -1,6 +1,12 @@
 package mate.academy
 
+const val FIRST_CHAR_INDEX: Int = 0
+
 fun makeAbbr(source: String) : String {
-    // implement this function
-    return ""
+    val strings = source.uppercase().split(" ")
+    var result: String = ""
+    for (element in strings) {
+        result += element.toCharArray()[FIRST_CHAR_INDEX]
+    }
+    return result
 }
