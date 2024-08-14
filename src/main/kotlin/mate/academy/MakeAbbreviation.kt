@@ -1,6 +1,9 @@
 package mate.academy
 
+const val SPACE = " "
+
 fun makeAbbr(source: String) : String {
-    // implement this function
-    return ""
+    return source.split(SPACE)
+        .map { it.first().toUpperCase() }
+        .joinToString("")
 }
