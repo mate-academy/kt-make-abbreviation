@@ -1,6 +1,6 @@
 package mate.academy
 
 fun makeAbbr(source: String) : String {
-    // implement this function
-    return ""
+    if (source.isEmpty() || source.isBlank()) return ""
+    return source.split(" ").map { it[0].uppercase() }.joinToString("")
 }
