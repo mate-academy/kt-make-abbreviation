@@ -1,6 +1,9 @@
 package mate.academy
 
-fun makeAbbr(source: String) : String {
+fun makeAbbr(source: String): String {
     // implement this function
-    return ""
+    val arr = source.split(" ")
+    var res = ""
+    arr.forEach { res += it[0] }
+    return res.uppercase()
 }
